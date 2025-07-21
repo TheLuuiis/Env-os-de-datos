@@ -3,16 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                 <!-- LIBRERY -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
         <title>MySQL</title>
         <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
-        <form method="post" action="guardar.php">
-            <input type="text" name="nombre" placeholder="Nombre" required>
-            <input type="text" name="apellido" placeholder="Apellido" required>
-            <input type="tel" name="telefono" placeholder="Teléfono" required>
-            <input type="email" name="email" placeholder="Email" required>
-        </form>
+        <div class="container-form">
+            <div class="title-form">
+                <h1>Registrese</h1>
+            </div>
+            <form  action="guardar.php" method="post">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
     </body>
 </html>
